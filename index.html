@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>罗来烽音乐播放器</title>
+    <link rel="stylesheet" href="./css/audio.css">
+</head>
+<body background="./img/bg0.png">
+    <div class="upper-container">
+        <div class="record-contioner">
+            <div class="record-bg">
+                <div id="record-img" class="rotate-play"></div>
+            </div>
+        </div>
+        <div class="introduction-container">
+            <div class="text-container">
+                <div class="music-title">音乐1</div>
+                <div class="author-container"> 
+                    作者：
+                    <span class="author-name">25216950520 罗来烽</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <audio id="audioTag"></audio>
+        <div class="progress">
+            <div class="progress-play"></div>
+        </div>
+        <div class="controls">
+            <div class="timer-container">
+                <span class="played-time">00:00</span>
+                &nbsp;/&nbsp;
+                <span class="audio-time">00:00</span>
+            </div>
+            <div class="center-container">
+                <div class="playMode center-icon"></div>
+                <div class="beforeMusic center-icon"></div>
+                <div class="playPause center-icon icon-play"></div>
+                <div class="nextMusic center-icon"></div>
+                <div class="volumn center-icon"></div>
+                <input type="range" id="volumn-togger" value="70" min="0" max="100" step="1">
+            </div>
+            <div class="right-container">
+                <div id="MV" class="bottom-icon"></div>
+                <div id="speed">1.0X</div>
+                <div id="list" class="bottom-icon"></div>
+            </div>
+        </div>
+    </div>
+    <div class="close-container"></div>
+    <div class="list-container">
+        <div class="musiclistTitle">播放队列
+        </div>
+        <hr>
+        <div class="musiclist">
+        </div>
+    </div>
+</body>
+</html>
+<script src="./js/audio.js"></script>
